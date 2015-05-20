@@ -26,8 +26,22 @@
 		<%= link_to 'About', '#' %>
 	</header>
 	<hr />
-<br class="clear" />
-<%= yield %>
+	<br class="clear" />
+
+	<div class="container">
+	<%= yield %>
+</div>
+	<div class="footer">
+		<div class="container">
+			<div class="col-xs-6">
+				<%= link_to "This isn't enough, I need more.", "#" , :class => 'next-quote' %>
+			</div>
+			<div class="col-xs-6 footer-blurb">
+			Proudly hacked in Portland,OR by <a href="#"> Tim Fletcher</a> <br/>
+
+			</div>
+	</div>
+</div>
 
 </body>
 </html>
