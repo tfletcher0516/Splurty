@@ -7,7 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<header>
+	<div class="col-xs-3">
+		Logo
+	</div>
+	<div class ="col-xs-5">
+		Bringing you insight on technology.
+	</div>
+	<div class="col-xs-5">
+		<%= link_to 'Contribute', '#' %>
+		<%= link_to 'About', '#' %>
+	</header>
 
+<br class="clear" />
 <%= yield %>
 
 </body>
