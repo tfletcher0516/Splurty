@@ -10,6 +10,7 @@
 	<header>
 	<div class="col-xs-3">
 		<div class="circle">
+			<%= link_to root_path, :class => 'logo' do %>
   <br />
   Tech
   <br />
@@ -17,12 +18,13 @@
   <br />
   Everywhere
 </div>
+	<% end %>
 	</div>
 	<div class ="col-xs-4 slogan">
 		Bringing you insight on technology.
 	</div>
 	<div class="col-xs-5 links">
-		<%= link_to 'Contribute', '#' %>
+		<%= link_to 'Contribute', new_quote_path %>
 		<%= link_to 'About', '#' %>
 	</header>
 	<hr />
@@ -34,7 +36,7 @@
 	<div class="footer">
 		<div class="container">
 			<div class="col-xs-6">
-				<%= link_to "This isn't enough, I need more.", "#" , :class => 'next-quote' %>
+				<%= link_to "This isn't enough, I need more.", root_path , :class => 'next-quote' %>
 			</div>
 			<div class="col-xs-6 footer-blurb">
 			Proudly hacked in Portland,OR by <a href="#"> Tim Fletcher</a> <br/>
